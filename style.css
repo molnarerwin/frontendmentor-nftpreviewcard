@@ -80,7 +80,7 @@ main.nftcard a#title {
     display: block;
     font-weight: 600;
     margin: 25px 0;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 main.nftcard p#description {
@@ -94,7 +94,7 @@ main.nftcard div#amount {
 
 main.nftcard div#amount span:first-of-type {
     color: hsl(178, 100%, 50%);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 main.nftcard span {
