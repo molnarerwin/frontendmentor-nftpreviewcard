@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+p {
+    font-size: 18px;
+}
+
+.flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 45px 15px;
+}
+
+main.nftcard {
+    max-height: 600px;
+    width: 350px;
+    padding: 25px;
+    border-radius: 16px;
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
+}
+
+main.nftcard a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+main.nftcard a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+main.nftcard div.img-container {
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main.nftcard div.img-container img {
+    width: 100%;
+    /*So the container div with the colored background won't stick out*/
+    display: block;
+}
+
+main.nftcard div.img-container:hover img {
+    opacity: 0.4;
+}
+
+main.nftcard div.img-container:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url('images/icon-view.svg') center no-repeat;
+    cursor: pointer;
+}
+
+main.nftcard a#title {
+    display: block;
+    font-weight: 600;
+    margin: 25px 0;
+    font-size: 24px;
+}
+
+main.nftcard p#description {
+    margin-bottom: 25px;
+}
+
+main.nftcard div#amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.nftcard div#amount span:first-of-type {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+main.nftcard span {
+    gap: 5px;
+}
+
+main.nftcard i.icon {
+    height: 18px;
+    width: 11px;
+    display: inline-block;
+}
+
+main.nftcard i.eth {
+    background: url("images/icon-ethereum.svg");
+}
+
+main.nftcard i.clock {
+    background: url("images/icon-clock.svg");
+    width: 17px;
+}
+
+main.nftcard hr {
+    border: none;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+    width: 100%;
+}
+
+main.nftcard div.author img.avatar {
+    vertical-align: middle;
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    margin-right: 15px;
+}
